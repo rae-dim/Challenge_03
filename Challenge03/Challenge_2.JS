@@ -1,15 +1,17 @@
 // script.js
 
-const add = (a, b) => { return a + b } // return a +b so that it is not void
+function add(a,b){
+	return a + b;
+} 
 
-const multiply = (a, b) => { return  a * b }
+const multiply = (a, b) => { return a * b }
 
-function internal(add,multiply) {
-	const added = add(a, b)
-	const multiplied = multiply(a, b)
-	return added * multiplied
+const  internal = () => {
+	const added = add(this.internal.a, this.internal.b)
+	const multiplied = multiply(this.internal.a, this.internal.b)
+	console.log(added * multiplied)
 }
-internal()
+
 // Not allowed to change below this
 
 const example1 = {
