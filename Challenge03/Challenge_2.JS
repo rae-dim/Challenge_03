@@ -8,7 +8,7 @@ function multiply(a,b){
 	return a * b;
 } 
 
-const  internal = () => {
+function internal(){
 	const added = add(this.internal.a, this.internal.b)
 	const multiplied = multiply(this.internal.a, this.internal.b)
 	console.log(added * multiplied)
